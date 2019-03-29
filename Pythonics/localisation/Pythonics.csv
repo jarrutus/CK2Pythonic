@@ -1,0 +1,60 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_001;You are on your usual evening stroll around a lake near your castle when suddenly the cover of clouds makes way for a beam of moonlight shining on the lake. In the light, you notice a raised hand holding aloft a sword. You feel the wind getting stronger and a faint whisper calling your name from the lake.;You are on your usual evening stroll around a lake near your castle when suddenly the cover of clouds makes way for a beam of moonlight shining on the lake. In the light, you notice a raised hand holding aloft a sword. You feel the wind getting stronger and a faint whisper calling your name from the lake.;You are on your usual evening stroll around a lake near your castle when suddenly the cover of clouds makes way for a beam of moonlight shining on the lake. In the light, you notice a raised hand holding aloft a sword. You feel the wind getting stronger and a faint whisper calling your name from the lake.;;You are on your usual evening stroll around a lake near your castle when suddenly the cover of clouds makes way for a beam of moonlight shining on the lake. In the light, you notice a raised hand holding aloft a sword. You feel the wind getting stronger and a faint whisper calling your name from the lake.;;;;;;;;;x
+EVTOPTA_Pythonic_001;Step into the lake and approach the sword.;Step into the lake and approach the sword.;Step into the lake and approach the sword.;;Step into the lake and approach the sword.;;;;;;;;;x
+EVTDESC_Pythonic_002;You approach the blade carefully and once you are within arms reach you hear a whisper. "I, Lady of the Lake, will give you this blade, Excalibur to help you fulfil your destiny, for the road ahead of you, [Root.GetFirstName], is one of greatness, but also many hardships. The blade will aid you in your tasks. Now go and fulfil your destiny, [Root.GetFirstName], for you have much to do.";You approach the blade carefully and once you are within arms reach you hear a whisper. "I, Lady of the Lake, will give you this blade, Excalibur to help you fulfil your destiny, for the road ahead of you, [Root.GetFirstName], is one of greatness, but also many hardships. The blade will aid you in your tasks. Now go and fulfil your destiny, [Root.GetFirstName], for you have much to do.";You approach the blade carefully and once you are within arms reach you hear a whisper. "I, Lady of the Lake, will give you this blade, Excalibur to help you fulfil your destiny, for the road ahead of you, [Root.GetFirstName], is one of greatness, but also many hardships. The blade will aid you in your tasks. Now go and fulfil your destiny, [Root.GetFirstName], for you have much to do.";;You approach the blade carefully and once you are within arms reach you hear a whisper. "I, Lady of the Lake, will give you this blade, Excalibur to help you fulfil your destiny, for the road ahead of you, [Root.GetFirstName], is one of greatness, but also many hardships. The blade will aid you in your tasks. Now go and fulfil your destiny, [Root.GetFirstName], for you have much to do.";;;;;;;;;x
+EVTOPTA_Pythonic_002;Take Excalibur.;Take Excalibur.;Take Excalibur.;;Take Excalibur.;;;;;;;;;x
+excalibur;Excalibur;Excalibur;Excalibur;;Excalibur;;;;;;;;;x
+EVTDESC_Pythonic_003;As you are enjoying your morning meal, your steward, [Root.job_treasurer.GetFirstName], approaches you with a pile of papers. They clearly haven't slept at all. "My Lord, do you have any idea how much your military is costing you? The horses alone eat fortunes!" Caught off-guard, you sit stunned while the steward continues. "However, I have a cunning plan to cut the costs of the military to avoid your treasury running empty.";FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_003;[Root.job_treasurer.GetFirstName], do as you must.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTB_Pythonic_003;I'll take care of this myself.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+coconut_halves;Coconut halves;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_004;In the middle of the night, you wake up to a voice calling out your name. You swear the voice is coming inside your chambers, but you can't see anyone in there with you. "[Root.GetFirstName], you've been destined to find the fabled Holy Grail. There is no time to waste, you must start your adventure tomorrow," the voice beckons.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_004;I shall do as you ask.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTB_Pythonic_004;I am not worthy of such a destiny;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_005;On your hunt for The Holy Grail, your path is blocked by a knight clad in black armour, denying you the access on the bridge behind him. He is challenging you into a duel for the passage.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_005;Run away to avoid the duel.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTB_Pythonic_005;So be it.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTC_Pythonic_005;You make me sad.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_006;After a short but efficient duel, you emerge victoriously. The knight has been separated from his limbs and you're free to cross the bridge.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_006;We'll call it a draw.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_007;After a short but efficient duel, it is clear that you are no match for the knight. You're lying on the ground with the knight's sword pointing at your neck.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_007;I yield!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+black_knight_loss_desc;was killed in a duel by the Black Knight;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_008;As you continue your search for the fabled Holy Grail you notice a castle in the distance. On the road ahead of you, a peasant is dragging a cart. "Old woman", you yell. "Man", the peasant quickly corrects. You apologize as you ride alongside the peasant. "I'm only 38", he continues. "As I said, I'm terribly sorry about the woman part, but from behind...", you stammer as the peasant interrupts you: "You could have called me Dennis." "I didn't know you were called Dennis", you answer. "You didn't bother to find out, did you?" the peasant remarks. Ignoring the peasant's unfriendly attitude, you return to your original matter.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_008;Who is the knight who lives in that castle?;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_009;"No-one lives there", Dennis answers. "Then who is your lord?" you ask confused. "We don't have one.", he says, starting a rant about their system of ruling. Shortly you order him to be quiet, interrupting the monologue. "And who do you think you are?" he asks. "I am [Root.GetTitledName], the Lady of the Lake handed me Excalibur and therefore I am your [Root.GetTitle]. I order you to be quiet!" you answer proudly. "I didn't vote for you", he mutters. "Don't be silly, you don't vote for a [Root.GetTitle]." "You can't expect to wield supreme executive power just because some watery tart threw a sword at you." Dennis replies.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_009;Waste no more time on this peasant and walk away.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTB_Pythonic_009;Silence the man.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTC_Pythonic_009;Convince him that you are his rightful ruler;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_010;In your search for the Holy Grail, you encounter a group of menacing-looking knights. For some reason, they repeat the word "Ni" a lot and are threatening to kill you unless you deliver them a shrubbery.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_010;Very well, I shall find you a shrubbery.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTB_Pythonic_010;Is it really nescessary?;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_011;It would appear that the knights are afraid of the word 'It'. How curious.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_011;It. It! IT!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_012;After several days of searching, you do manage to find a man selling shrubberies. For a price of 10 gold, he'd be willing to sell you some of his finest specimens.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_012;Pay the man.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTB_Pythonic_012;Haggle the price down.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTC_Pythonic_012;Plead the man to give you one for free.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_013;You successfully deliver the shrubbery to the knights, however, they do not seem to be completely satisfied. The leader of the group is about to issue more demands.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_013;What is it now?;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_014;After failing to acquire a shrubbery, you return to the knights, who do not seem happy about the lack of shrubbery. In a desperate attempt to plead for your life, you blame the salesman.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_014;It wasn't my fault!;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_015;You have heard rumours of Bridge of Death and that the Holy Grail is supposed to be somewhere beyond that. After a week of searching, you manage to locate the bridge. The bridge crosses a seemingly bottomless chasm and on the edge of the bridge, you see a scruffy old man leaning on his cane. He must be the keeper of the bridge. As you approach the bridge, he calls out to you: "Stop! Who would cross the Bridge of Death must answer me these questions three, 'ere the other side he see.";FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_015;Turn away. You have no intention to die here.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTB_Pythonic_015;Ask me the questions, bridge-keeper, I'm not afraid.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_016;"What is your name?" the old man asks.\n"[Root.GetTitledName]", you answer proudly.\n"What is your quest?"\n"To find the Holy Grail."\n"What is the air-speed velocity of an unladen swallow?";FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_016;Try to give your best guess.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTB_Pythonic_016;European or an African swallow?;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTC_Pythonic_016;Around 198 furlongs per hour.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTD_Pythonic_016;Decide not to answer and just run away.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+bridge_of_death_death_desc;died on the Bridge of Death;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTB_Pythonic_004_TT;You will not get further events on the Holy Grail event chain;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTC_Pythonic_005_TT_A;you winning the duel.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTC_Pythonic_005_TT_B;you losing the duel.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_017;Despite years of searching, the Holy Grail still eludes you. Maybe it is time to give up the hunt and settle down...;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_017;It was still a grand adventure.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_018;As you realize that you are about to die, you call upon your squire. The young lad is saddened by your state, but you instruct him to return Excalibur to the lake whence it came from. Tears rolling down his face, he promises to return it to the Lady of the Lake.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_018;Time to put the blade to rest.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_006_TT;The Black Knight should trouble you no more.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTOPTA_Pythonic_011_TT;You've learned a way to keep the Knight of Ni out of your way.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+EVTDESC_Pythonic_019;You have successfully crossed the Bridge of Death.;FRENCH;GERMAN;;SPANISH;;;;;;;;;x

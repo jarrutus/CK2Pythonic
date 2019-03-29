@@ -1,0 +1,23 @@
+black_knight_loss = {
+	long_desc = black_knight_loss_desc
+	sound_list = {
+		female = {
+			"female_violent_death_01"
+		}
+		male = {
+			"male_violent_death_01"
+		}
+	}
+}
+
+bridge_of_death_death = {
+	long_desc = bridge_of_death_death_desc
+	sound_list = {
+		female = {
+			"female_violent_death_01"
+		}
+		male = {
+			"male_violent_death_01"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+### Various items involved in the mod ###
+excalibur = {
+	quality = 3
+	monthly_character_prestige = 0.75
+	martial = 2
+	combat_rating = 10
+	command_modifier = {
+		heavy_infantry = 0.10
+		cavalry = 0.10
+	}
+	active = {
+		is_adult = yes
+		religion_group = christian
+	}
+	flags = { combat_weapon }
+	picture = "GFX_sword_T3_glow_green"
+	slot = weapon
+}
+
+coconut_halves = {
+	quality = 1
+	command_modifier = { heavy_infantry = 0.005 }
+	picture = "GFX_horse_armor_T1"
+	flags = { easter_egg }
+}

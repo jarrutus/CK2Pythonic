@@ -1,0 +1,78 @@
+#spriteType = {
+#		name = "GFX_evt_bring_out_your_dead"
+#		texturefile = "gfx\\event_pictures\Plague_doctor.tga"
+#		allwaystransparent = yes
+#	}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_evt_Pythonic_Ni"
+		texturefile = "gfx\\event_pictures\Bandits_forest.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_forest"
+		texturefile = "gfx\\event_pictures\mysterious_forest_wol.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_lake"
+		texturefile = "gfx\\event_pictures\moonlit_mountains_hf.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_Stress"
+		texturefile = "gfx\\event_pictures\stressed_ruler_wol.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_Sweat"
+		texturefile = "gfx\\event_pictures\waking_up_cold_sweat_soa.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_Knight"
+		texturefile = "gfx\\event_pictures\dueling_knights_hf.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_Peasant"
+		texturefile = "gfx\\event_pictures\noble_haughty_talking_to_peasants_ze.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_Castle"
+		texturefile = "gfx\\event_pictures\Castle_tower.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_Shrubbery"
+		texturefile = "gfx\\event_pictures\Market.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_Failure"
+		texturefile = "gfx\\event_pictures\bad_mews_soa.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_Bridge"
+		texturefile = "gfx\\event_pictures\meeting_hf.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_Questions"
+		texturefile = "gfx\\event_pictures\rider_adventure_wol.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_Retire"
+		texturefile = "gfx\\event_pictures\Garden.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_Pythonic_Death"
+		texturefile = "gfx\\event_pictures\Bier_with_a_dead_character.dds"
+		allwaystransparent = yes
+	}
+}

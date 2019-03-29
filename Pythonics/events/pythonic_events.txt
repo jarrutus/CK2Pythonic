@@ -1,0 +1,514 @@
+namespace = Pythonic
+
+character_event = { #Start of Excalibur event chain
+	id = Pythonic.001
+	desc = EVTDESC_Pythonic_001
+	picture = GFX_evt_mysterious_forest
+	border = GFX_event_normal_frame_diplomacy
+	
+	religion = catholic
+	trigger = {
+		is_landed = yes	
+		NOT = { has_character_flag = has_excalibur }
+	}
+	
+	mean_time_to_happen = {
+		years = 60
+	}
+	
+	option = { # Enter the Lake
+		name = EVTOPTA_Pythonic_001
+		character_event = { id = Pythonic.002 days = 2 }
+	}
+}
+
+character_event = { # Excalibur part 2
+	id = Pythonic.002
+	desc = EVTDESC_Pythonic_002
+	picture = GFX_evt_Pythonic_lake
+	border = GFX_event_normal_frame_diplomacy
+	
+	is_triggered_only = yes
+	
+	option = { # Take the sword
+		name = EVTOPTA_Pythonic_002
+		add_artifact = excalibur
+		set_character_flag = has_excalibur
+	}
+}
+
+long_character_event = { # Coconut halves
+	id = Pythonic.003
+	desc = EVTDESC_Pythonic_003
+	picture = GFX_evt_Pythonic_Stress
+	border = GFX_event_long_frame_economy
+	
+	has_character_flag = has_excalibur
+	trigger = {
+		wealth <= 50
+		NOT = { has_character_flag = coconuts }
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+	
+	option = {
+		name = EVTOPTA_Pythonic_003
+		add_artifact = coconut_halves
+		set_character_flag = coconuts
+	}
+	option = {
+		name = EVTOPTB_Pythonic_003
+		tooltip_info = stewardship
+		trigger = {
+			ROOT = { stewardship >= 10 }
+		}
+		random_list = {
+			1 = {
+				change_stewardship = 1
+			}
+			1 = {
+				add_trait = stressed
+			}
+			2 = {}
+		}
+		
+	}
+}
+
+character_event = { # Start of Grail event chain
+	id = Pythonic.004
+	desc = EVTDESC_Pythonic_004
+	picture = GFX_evt_Pythonic_Sweat
+	border = GFX_event_normal_frame_religion
+	has_character_flag = has_excalibur
+	
+	mean_time_to_happen = {
+		years = 2
+	}
+	
+	trigger = {
+		NOT = { has_character_flag = Pythonic_Grail_Hunt }
+		NOT = { has_character_flag = Pythonic_Grail_Refusal }
+	}
+	option = {
+		name = EVTOPTA_Pythonic_004
+		set_character_flag = Pythonic_Grail_Hunt
+		random_list = {
+			2 = {
+				add_trait = ambitious
+			}
+			1 = {}
+		}
+	}
+	option = {
+		name = EVTOPTB_Pythonic_004
+		add_trait = humble
+		set_character_flag = Pythonic_Grail_Refusal
+		custom_tooltip = { text = EVTOPTB_Pythonic_004_TT }
+	}
+}
+
+character_event = { # Duel with the Black Knight part 1
+	id = Pythonic.005
+	desc = EVTDESC_Pythonic_005
+	picture = GFX_evt_Pythonic_Knight
+	border = GFX_event_normal_frame_war
+		
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	trigger = {
+		has_character_flag = Pythonic_Grail_Hunt
+		NOT = { 
+			OR = {
+			has_character_flag = Fought_The_Black_Knight 
+			has_character_flag = Coward_Black_Knight
+			}
+		}	
+	}
+	
+	option = { # Run away
+		name = EVTOPTA_Pythonic_005
+		set_character_flag = Coward_Black_Knight
+		random_list = {
+			3 = {
+				add_trait = craven
+			}
+			1 = {
+			}
+		}
+	}
+	option = { # Duel the knight
+		name = EVTOPTB_Pythonic_005
+		set_character_flag = Fought_The_Black_Knight
+		random_list = {
+			2 = { # Win the duel
+				character_event = { id = Pythonic.006 days = 1 }
+				custom_tooltip = { text = EVTOPTC_Pythonic_005_TT_A }
+			}
+			1 = { # Lose the duel
+				character_event = { id = Pythonic.007 days = 1 }
+				custom_tooltip = { text = EVTOPTC_Pythonic_005_TT_B }
+			}
+		}
+	}
+	option = { # Duel with high martial
+		name = EVTOPTC_Pythonic_005
+		trigger = {
+			ROOT = { martial >= 8 }
+		}
+		set_character_flag = Fought_The_Black_Knight
+		tooltip_info = martial
+		random_list = {
+			4 = { # Win
+				character_event = { id = Pythonic.006 days = 1 }
+				custom_tooltip = { text = EVTOPTC_Pythonic_005_TT_A }
+			}
+			1 = { # Lose
+				character_event = { id = Pythonic.007 days = 1 }
+				custom_tooltip = { text = EVTOPTC_Pythonic_005_TT_B }
+			}
+		}
+	}
+	
+}
+
+character_event = { # Win The Duel with the Balck Knight
+	id = Pythonic.006
+	desc = EVTDESC_Pythonic_006
+	picture = GFX_evt_Pythonic_Knight
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_Pythonic_006
+		prestige = 25
+		custom_tooltip = { text = EVTOPTA_Pythonic_006_TT }
+	}
+}
+
+character_event = { # Lose the duel
+	id = Pythonic.007
+	desc = EVTDESC_Pythonic_007
+	picture = GFX_evt_Pythonic_Knight
+	border = GFX_event_normal_frame_war
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_Pythonic_007
+		pretige = -25
+		random_list = {
+			5 = {
+				add_trait = wounded
+			}
+			3 = {}
+			2 = {
+				death = { death_reason = black_knight_loss }
+			}
+		}
+	}
+}
+
+long_character_event = { # Peasant mockery part 1/2
+	id = Pythonic.008
+	desc = EVTDESC_Pythonic_008
+	picture = GFX_evt_Pythonic_Peasant
+	border = GFX_event_long_frame_diplomacy
+	has_character_flag = Pythonic_Grail_Hunt
+	
+	mean_time_to_happen = {
+		years = 1
+	}
+	trigger = {
+		NOT = { has_character_flag = mocked_by_peasants }
+	}
+	option = {
+		name = EVTOPTA_Pythonic_008
+		character_event = { id = Pythonic.009 days = 1 }
+	}
+}
+
+long_character_event = { # Peasant mockery part 2/2
+	id = Pythonic.009
+	desc = EVTDESC_Pythonic_009
+	picture = GFX_evt_Pythonic_Castle
+	border = GFX_event_long_frame_diplomacy
+	is_triggered_only = yes
+	
+	option = { # Walk away
+		name = EVTOPTA_Pythonic_009
+		prestige = -25
+		set_character_flag = mocked_by_peasants
+		random_list = {
+			3 = {}
+			1 = {
+				add_trait = humble
+			}
+		}
+	}
+	option = { # Silence the peasant
+		name = EVTOPTB_Pythonic_009
+		prestige = -25
+		set_character_flag = mocked_by_peasants
+		random_list = {
+			3 = {
+				add_trait = wroth
+			}
+			1 = {}
+		}
+	}
+	option = { # Engage in philosophical debate
+		name = EVTOPTC_Pythonic_009
+		prestige = 25
+		set_character_flag = mocked_by_peasants
+		trigger = {
+			ROOT = { learning >= 8 }
+		}
+		random_list = {
+			1 = {
+				change_learning = 1
+			}
+			1 = {}
+		}
+	}
+}
+
+character_event = { # Introduce knights of Ni
+	id = Pythonic.010
+	desc = EVTDESC_Pythonic_010
+	picture = GFX_evt_Pythonic_Ni
+	border = GFX_event_normal_frame_diplomacy
+	has_character_flag = Pythonic_Grail_Hunt
+	
+	mean_time_to_happen = {
+		years = 1
+	}
+	trigger = {
+		NOT = { has_character_flag = knights_of_ni }
+	}
+	
+	option = { # Promise to get a shrubbery
+		name = EVTOPTA_Pythonic_010
+		character_event = { id = Pythonic.012 days = 7 }
+	}
+	option = { # Figure out "It"
+		name = EVTOPTB_Pythonic_010
+		trigger = {
+			ROOT = { diplomacy >= 8 }
+		}
+		tooltip_info = diplomacy
+		character_event = { id = Pythonic.011 days = 1 }
+	}
+}
+
+character_event = { # End of Ni event chain
+	id = Pythonic.011
+	desc = EVTDESC_Pythonic_011
+	picture = GFX_evt_Pythonic_Ni
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_Pythonic_011
+		set_character_flag = knights_of_ni
+		prestige = 10
+		custom_tooltip = { text = EVTOPTA_Pythonic_011_TT }
+	}
+}
+
+character_event = { # Meet a shrubbery salesman
+	id = Pythonic.012
+	desc = EVTDESC_Pythonic_012
+	picture = GFX_evt_Pythonic_Shrubbery
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	option = { # Buy one on regular price
+		name = EVTOPTA_Pythonic_012
+		wealth = -10
+		character_event = { id = Pythonic.013 days = 2 }
+	}
+	option = { # Haggle price down
+		name = EVTOPTB_Pythonic_012
+		trigger = {
+			ROOT = { stewardship >= 8 }
+		}
+		wealth = -5
+		tooltip_info = stewardship
+		character_event = { id = Pythonic.013 days = 2 }
+	}
+	option = { # Plead for a shrubbery
+		name = EVTOPTC_Pythonic_012
+		random_list = {
+			2 = { # Successfully plead
+				character_event = { id = Pythonic.013 days = 2 }
+			}
+			1 = { # Fail to get a shrubbery
+				character_event = { id = Pythonic.014 days = 2 }
+			}
+		}
+	}
+}
+
+character_event = { # Deliver Shrubbery
+	id = Pythonic.013
+	desc = EVTDESC_Pythonic_013
+	picture = GFX_evt_Pythonic_Ni
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_Pythonic_013
+		character_event = { id = Pythonic.011 days = 1 }
+	}
+}
+
+character_event = { # Failed delivery
+	id = Pythonic.014
+	desc = EVTDESC_Pythonic_014
+	picture = GFX_evt_Pythonic_Failure
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	option = {
+	name = EVTOPTA_Pythonic_014
+		character_event = { id = Pythonic.011 days = 1 }
+	}
+}
+
+long_character_event = { # Bridge of death
+	id = Pythonic.015
+	desc = EVTDESC_Pythonic_015
+	picture = GFX_evt_Pythonic_Bridge
+	border = GFX_event_long_frame_diplomacy
+	has_character_flag = Pythonic_Grail_Hunt
+	
+	mean_time_to_happen = {
+		years = 2
+	}
+	trigger = {
+		NOT = {
+			OR = { 
+				has_character_flag = bridge_of_death_coward
+				has_character_flag = bridge_of_death_answered 
+			}
+		}
+	}
+	option = { # Turn away
+		name = EVTOPTA_Pythonic_015
+		set_character_flag = bridge_of_death_coward
+		prestige = -25
+	}
+	option = { # Answer the questions
+		name = EVTOPTB_Pythonic_015
+		character_event = { id = Pythonic.016 days = 1 }
+		set_character_flag = bridge_of_death_answered
+	}
+	# Maybe add in a search for other way accross later
+}
+
+character_event = { # Answer the Bridge keeper's questions
+	id = Pythonic.016
+	desc = EVTDESC_Pythonic_016
+	picture = GFX_evt_Pythonic_Questions
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	option = { # Take a guess
+		name = EVTOPTA_Pythonic_016
+		random_list = {
+			1 = { character_event = { id = Pythonic.019 } }
+			1 = {
+				death = { death_reason = bridge_of_death_death }
+			}
+		}
+	}
+	option = { # European or African?
+		name = EVTOPTB_Pythonic_016
+		trigger = {
+			ROOT = { intrigue >= 8 }
+		}
+		tooltip_info = intrigue
+		character_event = { id = Pythonic.019 }
+	}
+	option = { # The correct answer
+		name = EVTOPTC_Pythonic_016
+		trigger = {
+			ROOT = { learning >= 8 }
+		}
+		tooltip_info = learning
+		character_event = { id = Pythonic.019 }
+	}
+	option = { # run away
+		name = EVTOPTD_Pythonic_016
+		set_character_flag = bridge_of_death_coward
+		clr_character_flag = bridge_of_death_answered
+		prestige = -25
+		add_trait = craven
+	}
+}
+
+# Could also be done as a decision
+character_event = { # Give up the hunt for Holy Grail
+	id = Pythonic.017
+	desc = EVTDESC_Pythonic_017
+	picture = GFX_evt_Pythonic_Retire
+	border = GFX_event_normal_frame_diplomacy
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	trigger = {
+		has_character_flag = Pythonic_Grail_Hunt
+		OR = {
+			has_character_flag = Fought_The_Black_Knight 
+			has_character_flag = Coward_Black_Knight
+		}
+		has_character_flag = mocked_by_peasants
+		has_character_flag = knights_of_ni
+		OR = { 
+			has_character_flag = bridge_of_death_coward
+			has_character_flag = bridge_of_death_answered 
+		}
+	}
+	option = {
+		name = EVTOPTA_Pythonic_017
+		clr_character_flag = Pythonic_Grail_Hunt
+		prestige = 50
+	}
+}
+
+character_event = { # Destroy Excalibur
+	id = Pythonic.018
+	desc = EVTDESC_Pythonic_018
+	picture = GFX_evt_Pythonic_Retire
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	trigger = {
+		has_artifact = excalibur
+	}
+	immediate = {
+		destroy_artifact = excalibur
+	}
+	option = {
+		name = EVTOPTA_Pythonic_018	
+	}
+}
+
+character_event = { # Notification for crossing Bridge of Death
+	id = Pythonic.019
+	desc = EVTDESC_Pythonic_019
+    picture = GFX_evt_recieve_letter
+    border = GFX_event_normal_frame_religion
+    notification = yes
+	is_triggered_only = yes
+
+    option = { #Excellent
+        name = EXCELLENT
+    }
+}

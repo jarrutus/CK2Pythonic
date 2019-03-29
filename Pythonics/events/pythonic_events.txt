@@ -47,6 +47,7 @@ long_character_event = { # Coconut halves
 	trigger = {
 		wealth <= 50
 		NOT = { has_character_flag = coconuts }
+		NOT = { has_artifact = coconut_halves }
 	}
 	
 	mean_time_to_happen = {
@@ -61,6 +62,7 @@ long_character_event = { # Coconut halves
 	option = {
 		name = EVTOPTB_Pythonic_003
 		tooltip_info = stewardship
+		set_character_flag = coconuts
 		trigger = {
 			ROOT = { stewardship >= 10 }
 		}
@@ -72,8 +74,7 @@ long_character_event = { # Coconut halves
 				add_trait = stressed
 			}
 			2 = {}
-		}
-		
+		}	
 	}
 }
 
